@@ -1,8 +1,8 @@
-package java.study.datajap.repository;
+package java.study.datajpa.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.study.datajap.entity.Team;
+import java.study.datajpa.entity.Team;
 
 public interface TeamRepository extends JpaRepository<Team, Long> {
 }

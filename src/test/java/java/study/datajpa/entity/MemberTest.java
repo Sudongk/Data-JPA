@@ -1,4 +1,4 @@
-package java.study.datajap.entity;
+package java.study.datajpa.entity;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;

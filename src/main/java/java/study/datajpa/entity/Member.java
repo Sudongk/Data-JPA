@@ -1,4 +1,4 @@
-package java.study.datajap.entity;
+package java.study.datajpa.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -22,7 +22,7 @@ public class Member {
 
     private Integer age;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     @JoinColumn(name = "team_id")
     private Team team;
 

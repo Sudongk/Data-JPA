@@ -1,4 +1,4 @@
-package java.study.datajap.entity;
+package java.study.datajpa.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -20,7 +20,7 @@ public class Team {
 
     private String name;
 
-    @OneToMany(mappedBy = "team")
+    @OneToMany(mappedBy = "team", orphanRemoval = true)
     private List<Member> members = new ArrayList<>();
 
     public Team(Long id, String name) {
